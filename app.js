@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const hostname = '127.0.0.1'   // set constants
+const hostname = '0.0.0.0'   // set constants
 const port = 3002
 
 app.get('/', function (req, res) {
@@ -14,6 +14,10 @@ app.get('/hello', (req, res) => {
 
 app.get('/big',  (req, res) =>{
   res.send('<h1>Hello World!</h1>')
+})
+
+app.get('/guys',(req,res) =>{
+  res.send('<p>Hi to all</p>')
 })
 
 app.get('/greeting/:id',  (req, res) =>{
@@ -30,7 +34,7 @@ app.use((req, res, next) => {
 })
 
 app.listen(port, hostname, () => {
-  console.log(`Example app listening at http://${hostname}:${port}/`)
+  console.log(`Example app listening at http://localhost:${port}/`)
   console.log('Hit CTRL-C CTRL-C to stop\n')
 })
 
