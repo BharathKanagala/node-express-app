@@ -4,8 +4,8 @@
 
 ## Links
 
-- [Demo](https://denisecase.github.io/node-express-app/)
-- [Source](https://github.com/denisecase/node-express-app)
+- [Demo](https://bharathkanagala.github.io/node-express-app/)
+- [Source](https://github.com/BharathKanagala/node-express-app)
 
 ## Requirements
 
